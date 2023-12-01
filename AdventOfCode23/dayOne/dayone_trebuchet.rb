@@ -1,7 +1,7 @@
 # Psudo code solution: create array from each line ([1we5st3]) / [we7st]
 # for each element in the array cheack for a number  - if number map to new array. 153 / 7
-# for each array - take first and last digit and concat. store in variable per array = so you can add 13 / if array length = 1 > concat eg 77
-# add all the variables values together.
+# for each element in the array - take first and last digit and concat.  13 /  77 convert to i
+# add all the values together.
 # ______
 
 input = File.read('input.txt').split("\n") # creates an array of strings 1000 elements long.
