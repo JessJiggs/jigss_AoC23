@@ -7,7 +7,7 @@
 input = File.read('input.txt').split("\n") # creates an array of strings 1000 elements long.
 # p input
 
-input_return_array = input.map { |i| i.split(/[a-zA-Z]+/).join('') }
+input_return_array = input.map { |i| i.split(/[a-zA-Z]+/).join('') } #creates an array of strings with numbers only
 # p input_return_array
 # ______
 # for each element of the array check length: then:
@@ -20,7 +20,7 @@ input_return_array = input.map { |i| i.split(/[a-zA-Z]+/).join('') }
 
 # input_return_array = ["1", "22","333"]
 # 11, 22, 33
-def findStringNumbers(input_return_array)
+def find_string_numbers(input_return_array)
   new_array = input_return_array.map do |element|
     if element.length == 1
       "#{element+element}".to_i
@@ -30,6 +30,6 @@ def findStringNumbers(input_return_array)
       "#{element[0]+element[-1]}".to_i
     end
   end
-  return new_array.sum
+  new_array.sum
 end
 p findStringNumbers(input_return_array)
